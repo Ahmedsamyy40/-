@@ -16,179 +16,184 @@
             padding: 0;
             text-align: center;
         }
-/* إعدادات نمطية للرأسية */
-header {
-    background-color: #F6AE68;
-    padding: 5px; /* تصغير الحشو */
-    font-size: 1.5em; /* تصغير حجم النص */
-    color: #54308B;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 80px; /* ضبط ارتفاع الهيدر */
-}
+        header {
+            background-color: #54308B; /* لون خلفية الهيدر */
+            padding: 5px; /* تصغير الحشو */
+            font-size: 1.5em; /* تصغير حجم النص */
+            color: white; /* لون النص في الهيدر */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل الخلفية */
+            display: flex; /* استخدام Flexbox لتنسيق المحتويات */
+            justify-content: space-between; /* توزيع العناصر بشكل متساوي */
+            align-items: center; /* توسيط العناصر عموديًا */
+            position: relative; /* تعيين موضع نسبي */
+            height: 60px; /* تثبيت ارتفاع الهيدر */
+        }
 
-/* إعدادات نمطية لشعار الأكاديمية */
-.logo {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center; /* ضمان محاذاة الشعار في وسط الهيدر */
-}
+        /* أنماط للأيقونات الاجتماعية في الهيدر */
+        .header-social-icons {
+            display: flex; /* استخدام Flexbox لتنسيق الأيقونات الاجتماعية */
+            gap: 10px; /* المسافة بين الأيقونات */
+        }
 
-.logo img {
-    height: 60px; /* ضبط حجم الشعار */
-    max-height: 60px; /* ضبط الحد الأقصى لارتفاع الشعار */
-}
+        /* أنماط للأيقونات الاجتماعية في الهيدر */
+        .header-social-icons a {
+            color: white; /* لون الأيقونات الاجتماعية */
+            font-size: 1em; /* حجم الأيقونات الاجتماعية */
+            text-decoration: none; /* إزالة التسطير من الروابط */
+        }
 
-/* إعدادات نمطية لعنوان الرأسية */
-.header-title {
-    flex-grow: 1;
-    text-align: center;
-}
+        /* تغيير لون الأيقونات الاجتماعية عند التمرير فوقها */
+        .header-social-icons a:hover {
+            color: #e99650; /* تغيير لون الأيقونات عند التمرير فوقها */
+        }
 
-/* إعدادات نمطية لأيقونات التواصل الاجتماعي في الرأسية */
-.header-social-icons {
-    display: flex;
-    gap: 10px;
-}
-.header-social-icons a {
-    color: #54308B;
-    font-size: 1em;
-    text-decoration: none;
-}
+        /* إعدادات نمطية لشعار الأكاديمية */
+        .logo img {
+            height: 100px; /* تكبير الشعار */
+            max-height: 100px; /* تكبير الحد الأقصى لارتفاع الشعار */
+        }
 
-/* إعدادات نمطية لشريط التنقل */
-nav {
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    padding: 5px 0; /* تصغير الحشو */
-    flex-wrap: wrap; /* لإدارة العناصر في شريط التنقل */
-}
-nav a {
-    color: #54308B;
-    text-decoration: none;
-    padding: 5px 10px; /* تصغير الحشو */
-    font-size: 0.8em; /* تصغير حجم النص */
-}
-nav a:hover {
-    background-color: #e99650;
-    border-radius: 5px;
-}
+        /* إعدادات نمطية لشريط التنقل */
+        nav {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            padding: 5px 0; /* تصغير الحشو */
+        }
+        nav a {
+            color: #54308B;
+            text-decoration: none;
+            padding: 5px 10px; /* تصغير الحشو */
+            font-size: 0.8em; /* تصغير حجم النص */
+        }
+        nav a:hover {
+            background-color: #e99650;
+            border-radius: 5px;
+        }
 
-/* إعدادات نمطية للكاروسيل */
-.carousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.carousel img {
-    width: 100%;
-    height: auto;
-    display: none;
-}
-.carousel img.active {
-    display: block;
-}
+        /* إعدادات نمطية للكاروسيل */
+        .carousel {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .carousel img {
+            width: 100%;
+            height: auto;
+            display: none;
+        }
+        .carousel img.active {
+            display: block;
+        }
 
-/* إعدادات نمطية لمحتوى الصفحة */
-.container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-}
-.card {
-    background-color: #ffffff;
-    color: #54308B;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: right;
-}
-.card h2 {
-    margin-top: 0;
-}
-.card img {
-    width: 100%;
-    max-width: 100px;
-    height: auto;
-    border-radius: 10px;
-}
+        /* إعدادات نمطية لمحتوى الصفحة */
+        .container {
+            padding: 20px;
+            max-width: 100%;
+            margin: auto;
+        }
+        .card {
+            background-color: #ffffff;
+            color: #54308B;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: right;
+        }
+        .card h2 {
+            margin-top: 0;
+        }
+        .card img {
+            width: 100%;
+            max-width: 100px;
+            height: auto;
+            border-radius: 10px;
+        }
 
-/* إعدادات نمطية للجزء السفلي من الصفحة */
-.footer {
-    background-color: #F6AE68;
-    padding: 10px;
-    text-align: center;
-    color: #54308B;
-    position: relative;
-}
-.footer a {
-    color: #54308B;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 1.5em;
-}
-.footer a:hover {
-    color: #3a2a6a;
-}
-.footer .social-icons {
-    margin-top: 10px;
-}
-.sub-branch a {
-    display: inline-block;
-    background-color: #F6AE68;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    font-size: 1.2em;
-    margin: 5px;
-}
-.sub-branch a:hover {
-    background-color: #e99650;
-}
-.branch {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        /* إعدادات نمطية للجزء السفلي من الصفحة */
+        .footer {
+            background-color: #F6AE68; /* لون خلفية الفوتر */
+            height: 40px; /* تحديد ارتفاع الفوتر */
+            padding: 2px; /* حشو الفوتر */
+            text-align: center; /* توسيط النص */
+            color: #54308B; /* لون النص في الفوتر */
+            position: relative; /* تعيين موضع نسبي */
+            transition: background-color 0.3s; /* تأثير انتقالي لتغيير لون الخلفية */
+        }
 
-/* إعدادات نمطية خاصة بالشاشات الصغيرة */
-@media only screen and (max-width: 768px) {
-    .logo img {
-        height: 50px; /* تقليل حجم الشعار */
-        max-height: 50px;
-    }
-    .header-title {
-        font-size: 1em; /* تقليل حجم النص */
-    }
-    nav {
-        flex-direction: column;
-    }
-    nav a {
-        padding: 10px;
-        font-size: 1em;
-    }
-    .carousel {
-        height: 100vh;
-    }
-    .carousel img {
-        height: 100%;
-        object-fit: cover;
-    }
-}
+        /* تغيير لون خلفية الفوتر عند التمرير فوقه */
+        .footer:hover {
+            background-color: #e99650; /* تغيير لون خلفية الفوتر عند التمرير فوقه */
+        }
 
+        /* إعدادات روابط الفوتر */
+        .footer a {
+            color: #54308B; /* لون الروابط */
+            text-decoration: none; /* إزالة التسطير من الروابط */
+            margin: 5px; /* المسافة حول الروابط */
+            font-size: 1.5em; /* حجم النص في الروابط */
+            transition: color 0.3s; /* تأثير انتقالي لتغيير لون الروابط */
+        }
+
+        /* تغيير لون الروابط في الفوتر عند التمرير فوقها */
+        .footer a:hover {
+            color: #3a2a6a; /* تغيير لون الروابط عند التمرير فوقها */
+        }
+
+        /* إعدادات الأيقونات الاجتماعية في الفوتر */
+        .footer .social-icons {
+            margin-top: 5px; /* المسافة من النص إلى الأيقونات الاجتماعية */
+        }
+
+        /* إعدادات الأيقونات الاجتماعية في الفوتر */
+        .footer .social-icons a {
+            color: white; /* لون الأيقونات الاجتماعية */
+            font-size: 1.5em; /* حجم الأيقونات الاجتماعية */
+            text-decoration: none; /* إزالة التسطير من الروابط */
+            transition: color 0.3s; /* تأثير انتقالي لتغيير لون الأيقونات */
+        }
+
+        /* تغيير لون الأيقونات الاجتماعية عند التمرير فوقها */
+        .footer .social-icons a:hover {
+            color: #3a2a6a; /* تغيير لون الأيقونات عند التمرير فوقها */
+        }
+
+        .sub-branch a {
+            display: inline-block;
+            background-color: #F6AE68;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-size: 1.2em;
+            margin: 5px;
+        }
+        .sub-branch a:hover {
+            background-color: #e99650;
+        }
+        .branch {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* إعدادات نمطية خاصة بالشاشات الصغيرة */
+        @media only screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                height: auto;
+            }
+            .header-social-icons {
+                margin-top: 10px;
+            }
+            nav a {
+                font-size: 1em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -271,4 +276,4 @@ nav a:hover {
         setInterval(nextImage, 3000);
     </script>
 </body>
-</html> 
+</html>
